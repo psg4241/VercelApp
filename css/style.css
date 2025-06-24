@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: #f1f1f1;
+}
+
+.hero {
+  background: url('../images/bg.jpg') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.profile-pic {
+  width: 130px;
+  border-radius: 50%;
+  border: 3px solid #00fff7;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #00fff7;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.social-icons a {
+  color: #00fff7;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  color: #00fff7;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  padding: 8px 0;
+  font-size: 1.1rem;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #101010;
+  color: #666;
+}
+section, .job, .profile-pic, h1, p, .social-icons a {
+  transition: all 0.4s ease-in-out;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+.job:hover {
+  background: #1a1a1a;
+  border-left: 3px solid #00fff7;
+  padding-left: 10px;
+  border-radius: 6px;
+}
+
+h1:hover {
+  animation: glitch 0.4s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red; }
+  20% { text-shadow: -2px 0 cyan; }
+  40% { text-shadow: 2px 2px green; }
+  60% { text-shadow: -2px -2px blue; }
+  80% { text-shadow: 1px 1px yellow; }
+  100% { text-shadow: 0 0 white; }
+}
